@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="220dp"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/blue_bg">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="205dp"
+        android:id="@+id/picid"
+        style="@style/Style.App.circleImageView"
+        android:scaleType="centerCrop"
+        android:layout_height="150dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/img"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:id="@+id/titleTxtid"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_gravity="start"
+        android:layout_marginStart="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 min"
+            android:id="@+id/durationid"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" . "
+            android:textColor="@color/orange"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercise"
+            android:id="@+id/excerciseTxtid"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:text=" . " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="160 kcal"
+            android:id="@+id/kcalTxtid"/>
+    </LinearLayout>
+</LinearLayout>
